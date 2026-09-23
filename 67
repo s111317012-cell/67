@@ -1,0 +1,140 @@
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網站</title>
+    <style>
+        :root {
+            --primary-color: #0969da;
+            --bg-color: #f6f8fa;
+            --text-color: #1f2328;
+            --card-bg: #ffffff;
+            --border-color: #d0d7de;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-color);
+        }
+
+        header p {
+            margin: 0;
+            color: #636c76;
+        }
+
+        main {
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            box-sizing: border-box;
+            flex: 1;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.875rem;
+            color: #636c76;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>歡迎來到我的 GitHub 網站</h1>
+        <p>這是一個使用 GitHub Pages 託管的個人主頁</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>關於我</h2>
+            <p>你好！這是我在 GitHub 上架設的個人網站。你可以在這裡修改內容，展示個人作品、撰寫文章或是分享專案連結。</p>
+        </section>
+
+        <section class="card">
+            <h2>常用連結與專案</h2>
+            <ul>
+                <li><a href="https://github.com" target="_blank" rel="noopener">我的 GitHub 個人檔案</a></li>
+                <li><a href="#">我的作品集 1</a></li>
+                <li><a href="#">我的作品集 2</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 個人網站. Built with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
+GitHub Pages 發布步驟
+儲存檔案：建立名為 index.html 的檔案，並將上述程式碼貼入儲存。
+
+上傳至 GitHub：將 index.html 提交（Commit）並推送（Push）至你的 GitHub 儲存庫（Repository）根目錄。
+
+開啟 GitHub Pages：
+
+進入該儲存庫的 Settings 頁面。
+
+點擊左側選單的 Pages。
+
+在 Build and deployment > Source 選擇 Deploy from a branch。
+
+將分支設定為 main（或 master），目錄保持 / (root)，點擊 Save。
+
+存取網站：等待約 1~2 分鐘，重新整理頁面後即可看到產生的專屬網址（格式通常為 `
